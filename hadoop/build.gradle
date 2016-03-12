@@ -21,7 +21,20 @@ dependencies {
     
     compile 'log4j:log4j:1.2.17';
     
-    compile 'org.apache.hadoop:hadoop-core:0.20.2';
+    compile 'org.apache.hadoop:hadoop-common:2.7.2';
+    compile 'org.apache.hadoop:hadoop-hdfs:2.7.2';
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-app:2.7.2';
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-hs:2.7.2';
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.7.2';
+    compile 'org.apache.hadoop:hadoop-datajoin:2.7.2';
+    compile 'org.apache.hadoop:hadoop-mapred-instrumented:0.22.0';
+  
+    
+    
+    compile 'org.apache.hbase:hbase-client:0.96.1-hadoop2';
+    compile 'org.apache.hbase:hbase-server:0.96.1-hadoop2';
+    
+    
     compile 'org.apache.commons:commons-lang3:3.0';
     compile 'com.google.protobuf:protobuf-java:2.5.0';
     compile 'commons-io:commons-io:2.4';
@@ -31,6 +44,13 @@ dependencies {
     compile 'org.apache.avro:avro-mapred:1.7.4';
     compile 'org.apache.avro:avro-tools:1.7.4';
     
+    compile 'com.googlecode.json-simple:json-simple:1.1';
+    
+    compile 'org.apache.hive:hive-common:0.13.0';
+    compile 'org.apache.hive:hive-exec:0.13.0';
+    compile 'org.apache.hive:hive-serde:0.13.0';
+    
+    compile 'net.sf.opencsv:opencsv:2.3';
 }
 
 test {
